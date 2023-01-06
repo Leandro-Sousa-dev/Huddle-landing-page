@@ -1,0 +1,129 @@
+@media(max-width: 1440px){
+    .logo{
+        padding-left: 13%;
+        margin: 50px 0 70px;
+    }
+    
+    .main-content{
+        grid-template-columns: minmax(200px, 800px) minmax(150px, 550px);
+    }
+
+    .main-content .huddle-infos h1{
+        font-size: 3.4rem;
+    }
+    
+    .main-content .huddle-infos p{
+        font-size: 1.6rem;
+        margin-bottom: 40px;
+    }
+    
+    .main-content .huddle-infos .register{
+        font-size: 2rem;
+
+    }
+}
+
+@media(max-width: 1200px){
+    .logo{
+        padding-left: 30px;
+        margin: 30px 0 50px;
+    }
+
+    .logo img {
+        width: 220px;
+    }
+
+    .main-content{
+        grid-template-columns: 0.7fr 0.4fr ;
+    }
+    
+    .main-content .huddle-images{
+        margin: 0 30px;
+    }
+
+    .main-content .huddle-infos{
+        margin: 30px;
+    }
+    
+    .main-content .huddle-infos h1{
+        font-size: 2.2rem;
+        margin-bottom: 20px;
+    }
+    
+    .main-content .huddle-infos p{
+        font-size: 1.3rem;
+        line-height: 20px;
+        margin-bottom: 40px;
+    }
+    
+    .main-content .huddle-infos .register{
+        font-size: 1.6rem;
+        padding: 10px 40px;
+    }
+}
+
+@media(max-width:768px){
+    .container{
+        background: var(--violet) url('../images/bg-mobile.svg') no-repeat;
+        background-size: contain;
+        display: grid;
+        grid: " logo " auto
+              " main-content " 1fr
+              " socials " 1fr / 1fr;
+    }
+
+    .logo{
+        margin: 35px 0 50px;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .main-content{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr;
+    }
+
+    .main-content .huddle-images{
+        margin: 0 35px;
+    }
+
+    .main-content .huddle-infos{
+        margin: 55px 35px 70px;
+        text-align: center;
+    }
+
+    .main-content .huddle-infos h1{
+        font-size: 2.4rem;
+        margin-bottom: 15px;
+    }
+    
+    .main-content .huddle-infos p{
+        font-size: 1.6rem;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .main-content .huddle-infos .register{
+        font-size: 1.3rem;
+        padding: 12px 70px;
+    }
+
+    .socials ul{
+        justify-content: center;
+        margin-right:0;
+        gap: 10px;
+    }
+    
+    .socials ul li{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .socials ul li a{
+        font-size: 1.5rem;
+    }
+
+}
