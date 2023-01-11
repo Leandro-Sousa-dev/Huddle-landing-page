@@ -5,7 +5,7 @@
     }
     
     .main-content{
-        grid-template-columns: minmax(200px, 800px) minmax(150px, 550px);
+        grid-template-columns: minmax(200px, auto) minmax(150px, 550px);
     }
 
     .main-content .huddle-infos h1{
@@ -63,13 +63,16 @@
 }
 
 @media(max-width:768px){
-    .container{
+    body{
         background: var(--violet) url('../images/bg-mobile.svg') no-repeat;
         background-size: contain;
+    }
+    
+    .container{
         display: grid;
         grid: " logo " auto
               " main-content " 1fr
-              " socials " 1fr / 1fr;
+              " socials " auto / 1fr;
     }
 
     .logo{

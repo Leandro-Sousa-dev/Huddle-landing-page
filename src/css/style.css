@@ -3,33 +3,31 @@ html{
 }
 
 body{
+    background: var(--violet) url('../images/bg-desktop.svg')center center no-repeat;
+    background-size: cover;
     font-family: 'Poppins', 'Open Sans',  sans-serif;
-    height: 100vh;
-    max-width: 1920px;
-    min-width: 375px;
+    min-height: 100vh;
 }
 
 .container{
-    background: var(--violet) url('../images/bg-desktop.svg')center center no-repeat;
-    background-size: cover;
-    height: 100%;
-    width: 100%;
+    max-width: 1920px;
+    min-height: 100%;
     display: grid;
     grid: " logo . " auto
-          " main-content main-content " 1fr
-          " . socials " 1fr / 1fr 1fr;
+          " main-content main-content " auto
+          " . socials " auto / 1fr 1fr;
 }
 
 .logo{
     grid-area: logo;
     padding-left: 13%;
-    margin: 50px 0 100px;
+    margin: 50px 0 10%;
 }
 
 .main-content{
     grid-area: main-content;
     display: grid;
-    grid-template-columns: minmax(200px, 1100px) minmax(150px, 600px);
+    grid-template-columns: minmax(auto, 1100px) minmax(150px, 600px);
 }
 
 .main-content .huddle-images{
@@ -76,6 +74,7 @@ body{
 
 .socials{
     grid-area: socials;
+    margin: 20px 0;
 }
 
 .socials ul{
