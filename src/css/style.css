@@ -16,6 +16,7 @@ body{
     grid: " logo . " auto
           " main-content main-content " auto
           " . socials " auto / 1fr 1fr;
+    margin: 0 auto;
 }
 
 .logo{
